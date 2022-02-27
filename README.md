@@ -61,9 +61,6 @@ alert("Welcome to the Ice Age!");
   element.innerHTML = _.join(['Hello', 'webpack'], ' ');
   element.classList.add('hello");
   
-// Add the image to our existing div.
-  const myIcon = new Image();
-  myIcon.src = Icon;
 
   element.appendChild(myIcon); 
   
@@ -99,22 +96,11 @@ document.body.appendChild(component());
 <body>
 
 
-<img class="img-ice"
-     src="img/iceage.jpg"
+
+     <img src="https://www.history.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cq_auto:good%2Cw_1200/MTU3ODc5MDg3MjQ3MDA5MDk3/ice-age-istock_000013097441large.jpg"
 alt:"large wall of ice">
   
-{
-  margin: 0;
-  pending: 0;
-}
-  
-.wrapper {
-  margin: 0 auto:;
-  width: 1000px;
-}
-  
-.img-ice {
-  width: 300 px;
+
 }
 <div class="">
  <h1>Welcome back to... THE ICE AGE!</h1>
