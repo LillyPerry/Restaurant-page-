@@ -53,7 +53,7 @@ module: {
  import './style.css';
  import Icon from './icon.png';
  
-   function component() {
+   function component(fit picture) {
   const element = document.createElement('div');
 alert("Welcome to the Ice Age!");
   
