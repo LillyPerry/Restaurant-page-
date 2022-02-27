@@ -97,8 +97,9 @@ document.body.appendChild(component());
 
 
 
-     <img src="https://www.history.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cq_auto:good%2Cw_1200/MTU3ODc5MDg3MjQ3MDA5MDk3/ice-age-istock_000013097441large.jpg"
-alt:"large wall of ice">
+     <img src=""
+alt:"large wall of ice"> 
+  
   
 
 }
