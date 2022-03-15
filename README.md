@@ -290,7 +290,19 @@ alt:"">
  <p>Travel back to prehistoric times with us with our lovable friends from the adorable and hilarious fanatic film series: The Ice Age!</p>
  <p>As you travel back in time wih us, please make sure to try all our freshly prepared mediteranian entres along side with our crunchy beatle salad! And for all you party aniamls out there, ask your waitor what our exotic drink of the day is. Taste so good it'll make your taste buds dance with flavors! Remember though DO NOT FEED THE DINOS AND MAMMOTHS!</p>
 </div>
+ 
+ <h1> Hours</h1>
+ <h2>Monday-Thursday: 12 pm-9 pm</h2>
+ <h2>Friday-Saturday: 12 Pm-10:30 PM</h2>
+ <h2>Sunday 12 PM-9 PM</h2>
 
+
+ <h1>Location</h1>
+ <h3>1316 Iceberg Road, Nippy Nips, Alaska</h3>
+ 
+ 
+ <h1>Directions</h1>
+ <p>If you get lost just walk past Ferocious Pirahna Lane (they won't attack you if you do not aknowledge them) and continue until you see a dead looking tree with a cranky and confused old looking woman. Do not worry she is just Sids' granny and she's coo coo in the head. If you follow our directions carefully you should have made it to the Ice Age in one piece without any trouble.</p>
 </body>
 </html>
 
