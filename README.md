@@ -302,7 +302,7 @@ alt:"">
  
  
  <h1>Directions</h1>
- <p>If you get lost just walk past Ferocious Pirahna Lane (they won't attack you if you do not aknowledge them) and continue until you see a dead looking tree with a cranky and confused old looking woman. Do not worry she is just Sids' granny and she's coo coo in the head. If you follow our directions carefully you should have made it to the Ice Age in one piece without any trouble.</p>
+ <p>If you get lost just walk past Ferocious Piranha Lane (they won't attack you if you do not aknowledge them) and continue until you see a dead looking tree with a cranky and confused old looking woman. Do not worry she is just Sids' granny and she's coo coo in the head. If you follow our directions carefully you should have made it to the Ice Age in one piece without any trouble.</p>
 </body>
 </html>
 
