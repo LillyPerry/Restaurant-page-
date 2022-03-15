@@ -1,6 +1,13 @@
 # Restaurant-page-
-mkdir webpack-demo 
-cd webpack-demo 
+$ mkdir demo-app 
+$ cd demo-app/
+[~/demp-app]$ npm install lodash 
+lodash@2.4.1 node_modules/lodash
+[~/demo-app]$ ls
+node_modules
+[~/demo-app] ls node_modules/
+lodash
+[~demo-app]$ clear 
 npm init -y 
 npm install webpack webpack-cli --save-dev
 npm install --save-dev html-webpack-plugin
@@ -286,10 +293,36 @@ alt:"">
 
 }
 <div class="">
+ import 
  <h1>Welcome back to... THE ICE AGE!</h1>
  <p>Travel back to prehistoric times with us with our lovable friends from the adorable and hilarious fanatic film series: The Ice Age!</p>
  <p>As you travel back in time wih us, please make sure to try all our freshly prepared mediteranian entres along side with our crunchy beatle salad! And for all you party aniamls out there, ask your waitor what our exotic drink of the day is. Taste so good it'll make your taste buds dance with flavors! Remember though DO NOT FEED THE DINOS AND MAMMOTHS!</p>
 </div>
+ 
+ 
+ <h1> Menu</h1>
+ <h3>Entres</h3>
+ <h4>T-rex ribs: medium rare or well done- $15.25</h4>
+  <h4>The Beeschurger: merdium rare or well done. chilled letuce, swiss cheese, tomatos, pickles- $12.63</h4>
+  <h4>Sids' Beatle salad: freshly prepared tossed salad with croutons with a few blackberries and beetles- $12.63</h4>
+  
+   
+ <h3>Side dishes</h3>
+ <h4>Fruit salad- $2.25</h4> 
+ <h4>Mammoth nachos- $2.25</h4> 
+ 
+ 
+ <h3>Fun drinks (only for 21+)</h3>
+ <h4> Tigers blood: white rum, splash of vodka, crushed and frozen cherrys, red curacao syrup, lime juice, cane sugar- $18.25</h4> 
+<h4> The Mammoth: tequilla, freshly squeezed OJ, lime juice with lime on the side - $18.25</h4>
+ <h4> Bucks Tangy Adventure: vodka, mixed berries, scotch bonno peper, lime- $18.25</h4>
+ 
+ 
+ <h4> Desserts</h4> 
+ <h3> Eds'misu: tirimisu with extra chocolate and carmelized vanilla center- $6.25</h3>
+ <h3> Ellies' red velvet: red velvet cake with a strawberry on top drizzled with strawberry syrup- $10.25</h3>
+ <h3> ice cream: chocolate, vanilla, strawberry, black berry-$.25</h3>
+ 
  
  <h1> Hours</h1>
  <h2>Monday-Thursday: 12 pm-9 pm</h2>
@@ -302,7 +335,7 @@ alt:"">
  
  
  <h1>Directions</h1>
- <p>If you get lost just walk past Ferocious Piranha Lane (they won't attack you if you do not aknowledge them) and continue until you see a dead looking tree with a cranky and confused old looking woman. Do not worry she is just Sids' granny and she's coo coo in the head. If you follow our directions carefully you should have made it to the Ice Age in one piece without any trouble.</p>
+ <h3>If you get lost just walk past Ferocious Piranha Lane (they won't attack you if you do not aknowledge them) and continue until you see a dead looking tree with a cranky and confused old looking woman. Do not worry she is just Sids' granny and she's coo coo in the head. If you follow our directions carefully you should have made it to the Ice Age in one piece without any trouble.</h3>
 </body>
 </html>
 
