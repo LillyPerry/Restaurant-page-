@@ -4,7 +4,6 @@ $ cd demo-app/
 [~/demp-app]$ npm install lodash 
 lodash@2.4.1 node_modules/lodash
 [~/demo-app]$ ls
-node_modules
 [~/demo-app] ls node_modules/
 lodash
 [~demo-app]$ clear 
@@ -14,6 +13,9 @@ npm install --save-dev html-webpack-plugin
 npm install toml yamljs json5 --save-dev
  npm uninstall css-loader csv-loader json5 style-loader toml xml-loader yamljs
 npm install --save-dev express webpack-dev-middleware
+npm install gitignore -g
+npm install gitignore 
+var gi = require(`gitignore`);
 
 
   webpack-demo
@@ -27,7 +29,7 @@ npm install --save-dev express webpack-dev-middleware
 |- /src
    |- index.js
    |- print.js
-|- /node_modules
+|-node_modules
 
 
 const express = require('express');
@@ -54,17 +56,7 @@ app.listen(3000, function () {
 export default function printMe() {
     console.log('I get called from print.js!');
   }
-...
-[webpack-cli] Compilation finished
-asset index.bundle.js 1.38 MiB [emitted] (name: index)
-asset print.bundle.js 6.25 KiB [emitted] (name: print)
-asset index.html 272 bytes [emitted]
-runtime modules 1.9 KiB 9 modules
-cacheable modules 530 KiB
-  ./src/index.js 406 bytes [built] [code generated]
-  ./src/print.js 83 bytes [built] [code generated]
-  ./node_modules/lodash/lodash.js 530 KiB [built] [code generated]
-webpack 5.4.0 compiled successfully in 706 ms
+
 
 
 <?xml version="1.0" encoding="UTF-8"?>
@@ -112,21 +104,7 @@ devServer: {
 };
  
  
- ...
-[webpack-cli] Compilation finished
-asset index.bundle.js 69.5 KiB [compared for emit] [minimized] (name: index) 1 related asset
-asset print.bundle.js 316 bytes [compared for emit] [minimized] (name: print)
-asset index.html 253 bytes [emitted]
-runtime modules 1.36 KiB 7 modules
-cacheable modules 530 KiB
-  ./src/index.js 406 bytes [built] [code generated]
-  ./src/print.js 83 bytes [built] [code generated]
-  ./node_modules/lodash/lodash.js 530 KiB [built] [code generated]
-webpack 5.4.0 compiled successfully in 2189 ms
-
-  
-  
-   npx webpack --watch
+       npx webpack --watch
  
  import _ from 'lodash';
  import printMe from './print.js';
@@ -154,9 +132,6 @@ import data from './data.json';
 
 // Warning shown, this is not allowed by the spec.
 import { foo } from './data.json';
-
-
-
 
 
 title = "TOML Example"
@@ -194,20 +169,7 @@ Likes tater tots and beer.',
 
 $ npm run build
 
-...
-[webpack-cli] Compilation finished
-asset bundle.js 72.6 KiB [emitted] [minimized] (name: main) 1 related asset
-runtime modules 1000 bytes 5 modules
-orphan modules 326 bytes [orphan] 1 module
-cacheable modules 539 KiB
-  modules by path ./node_modules/ 538 KiB
-    ./node_modules/lodash/lodash.js 530 KiB [built] [code generated]
-    ./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js 6.67 KiB [built] [code generated]
-    ./node_modules/css-loader/dist/runtime/api.js 1.57 KiB [built] [code generated]
-  modules by path ./src/ 965 bytes
-    ./src/index.js + 1 modules 639 bytes [built] [code generated]
-    ./node_modules/css-loader/dist/cjs.js!./src/style.css 326 bytes [built] [code generated]
-webpack 5.4.0 compiled successfully in 2231 ms
+
 
 
 @font-face {
@@ -229,29 +191,7 @@ $
 
 $ npm run build
 
-...
-[webpack-cli] Compilation finished
-assets by status 9.88 KiB [cached] 1 asset
-assets by info 33.2 KiB [immutable]
-  asset 55055dbfc7c6a83f60ba.woff 18.8 KiB [emitted] [immutable] [from: src/my-font.woff] (auxiliary name: main)
-  asset 8f717b802eaab4d7fb94.woff2 14.5 KiB [emitted] [immutable] [from: src/my-font.woff2] (auxiliary name: main)
-asset bundle.js 73.7 KiB [emitted] [minimized] (name: main) 1 related asset
-runtime modules 1.82 KiB 6 modules
-orphan modules 326 bytes [orphan] 1 module
-cacheable modules 541 KiB (javascript) 43.1 KiB (asset)
-  javascript modules 541 KiB
-    modules by path ./node_modules/ 539 KiB
-      modules by path ./node_modules/css-loader/dist/runtime/*.js 2.38 KiB 2 modules
-      ./node_modules/lodash/lodash.js 530 KiB [built] [code generated]
-      ./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js 6.67 KiB [built] [code generated]
-    modules by path ./src/ 1.98 KiB
-      ./src/index.js + 1 modules 794 bytes [built] [code generated]
-      ./node_modules/css-loader/dist/cjs.js!./src/style.css 1.21 KiB [built] [code generated]
-  asset modules 126 bytes (javascript) 43.1 KiB (asset)
-    ./src/icon.png 42 bytes (javascript) 9.88 KiB (asset) [built] [code generated]
-    ./src/my-font.woff2 42 bytes (javascript) 14.5 KiB (asset) [built] [code generated]
-    ./src/my-font.woff 42 bytes (javascript) 18.8 KiB (asset) [built] [code generated]
-webpack 5.4.0 compiled successfully in 2142 ms
+
 
 
 <!DOCTYPE html>
@@ -268,14 +208,6 @@ webpack 5.4.0 compiled successfully in 2142 ms
  </html>
  
  
- $ npx webpack
-[webpack-cli] Compilation finished
-asset main.js 69.3 KiB [emitted] [minimized] (name: main) 1 related asset
-runtime modules 1000 bytes 5 modules
-cacheable modules 530 KiB
-  ./src/index.js 257 bytes [built] [code generated]
-  ./node_modules/lodash/lodash.js 530 KiB [built] [code generated]
-webpack 5.4.0 compiled successfully in 1851 ms
 
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <link rel="stylesheet" href="">
@@ -285,15 +217,20 @@ webpack 5.4.0 compiled successfully in 1851 ms
 <body>
 
 
+    <img src=""
 
-     <img src=""
 alt:""> 
   
   
 
 }
 <div class="">
- import 
+ import
+
+ npm install gitignore
+ 
+ var gi = require(`gitignore`);
+ 
  <h1>Welcome back to... THE ICE AGE!</h1>
  <p>Travel back to prehistoric times with us with our lovable friends from the adorable and hilarious fanatic film series: The Ice Age!</p>
  <p>As you travel back in time wih us, please make sure to try all our freshly prepared mediteranian entres along side with our crunchy beatle salad! And for all you party aniamls out there, ask your waitor what our exotic drink of the day is. Taste so good it'll make your taste buds dance with flavors! Remember though DO NOT FEED THE DINOS AND MAMMOTHS!</p>
@@ -325,9 +262,9 @@ alt:"">
  
  
  <h1> Hours</h1>
- <h2>Monday-Thursday: 12 pm-9 pm</h2>
- <h2>Friday-Saturday: 12 Pm-10:30 PM</h2>
- <h2>Sunday 12 PM-9 PM</h2>
+ <h4>Monday-Thursday: 12 pm-9 pm</h4>
+ <h4>Friday-Saturday: 12 Pm-10:30 PM</h4>
+ <h4>Sunday 12 PM-9 PM</h4>
 
 
  <h1>Location</h1>
@@ -335,10 +272,15 @@ alt:"">
  
  
  <h1>Directions</h1>
- <h3>If you get lost just walk past Ferocious Piranha Lane (they won't attack you if you do not aknowledge them) and continue until you see a dead looking tree with a cranky and confused old looking woman. Do not worry she is just Sids' granny and she's coo coo in the head. If you follow our directions carefully you should have made it to the Ice Age in one piece without any trouble.</h3>
+ <h4>If you get lost just walk past Ferocious Piranha Lane (they won't attack you if you do not aknowledge them) and continue until you see a dead looking tree with a cranky and confused old looking woman. Do not worry she is just Sids' granny and she's coo coo in the head. If you follow our directions carefully you should have made it to the Ice Age in one piece without any trouble.</h4>
 </body>
 </html>
 
+
+<h1>Contact</h1>
+ <h4>Sid1234@iceage.com</h4>
+ <h4>Ed@iceage.com</h4>
+ <h4>Eddie@iceage.com</h4>
 
 
 
