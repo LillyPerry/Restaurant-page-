@@ -313,15 +313,15 @@ alt:"">
  
  
  <h3>Fun drinks (only for 21+)</h3>
- <h4> Tigers blood: white rum, splash of vodka, crushed and frozen cherrys, red curacao syrup, lime juice, cane sugar- $18.25</h4> 
-<h4> The Mammoth: tequilla, freshly squeezed OJ, lime juice with lime on the side - $18.25</h4>
- <h4> Bucks Tangy Adventure: vodka, mixed berries, scotch bonno peper, lime- $18.25</h4>
+ <h4> Tigers blood: white rum, splash of vodka, crushed and frozen cherrys, red curacao syrup, lime juice, cane sugar- $12.25</h4> 
+<h4> The Mammoth: tequilla, freshly squeezed OJ, lime juice with lime on the side - $12.25</h4>
+ <h4> Bucks Tangy Adventure: vodka, mixed berries, scotch bonno peper, lime- $12.25</h4>
  
  
  <h4> Desserts</h4> 
  <h3> Eds'misu: tirimisu with extra chocolate and carmelized vanilla center- $6.25</h3>
  <h3> Ellies' red velvet: red velvet cake with a strawberry on top drizzled with strawberry syrup- $10.25</h3>
- <h3> ice cream: chocolate, vanilla, strawberry, black berry-$.25</h3>
+ <h3> ice cream: chocolate, vanilla, strawberry, black berry-$6.25</h3>
  
  
  <h1> Hours</h1>
