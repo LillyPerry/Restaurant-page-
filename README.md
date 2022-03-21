@@ -13,23 +13,21 @@ npm install --save-dev html-webpack-plugin
 npm install toml yamljs json5 --save-dev
  npm uninstall css-loader csv-loader json5 style-loader toml xml-loader yamljs
 npm install --save-dev express webpack-dev-middleware
-npm install gitignore -g
-npm install gitignore 
-var gi = require(`gitignore`);
+npx webpack --watch
+npm install --save-dev style-loader css-loader
+
 
 
   webpack-demo
 |- package.json
-|- package-lock.json
 |- webpack.config.js
-|- server.js
 |- /dist
    |- bundle.js
-   |- index.html
-|- /src
-   |- index.js
-   |- print.js
-|-node_modules
+ |- /src
+  |- index.js
+  |- print.js
+|- style.css
+
 
 
 const express = require('express');
@@ -78,43 +76,60 @@ Autumn,Lindsey,Letter,I miss you
  
    const path = require('path');
    const HtmlWebpackPlugin = require('html-webpack-plugin');
-  
-module.exports = {
- mode: 'development',
- entry: {
-   app: './src/index.js',
- 
-},
-devtool: 'inline-source-map',
-devServer: {
-    static: './dist',
-    hot:true,
-  },
- plugins: [
-  new HtmlWebpackPlugin({
-    title: 'Hot Module Replacement',
+   
+   module.exports = {
+     entry: {
+     app: './src/index.js', 
+   },
+   devtool: 'incline-source-map',
+   devserver: {
+     static: './dist',
+     hot: true, 
+   },
+   module: { 
+      rules: [
+        {
+         test: /\.css$/,
+         use: ['style-loader', 'css-loader'],
+       },
+     ],
+   },
+   plugins: [
+     new HtmlWebpackPlugin({
+       title: 'Hot Module Replacement',
      }),
    ],
-   output: {
- filename: 'bundle.js',
-    path: path.resolve(__dirname, 'dist'),
-    clean: true,
-    publicPath: '/',
+    output: {
+   filename: '[name].bundle.js', 
+   path: path.resolve(__dirname, 'dist')
+    clean: true, 
   },
 };
+const compiler = webpack(config);
+
+// 'hot' and 'client' option are disabled because we added them manually 
+const server = new webpackDevServer({ hot: false, client: false }, compiler); 
+
+(async () => {
+  await server.start();
+  console.log('dev server is running');
+})();
+   
  
- 
-       npx webpack --watch
+body {
+  background: red;
+} 
+       
  
  import _ from 'lodash';
  import printMe from './print.js';
+ import './style.css';
 
 function component() {
   const element = document.createElement('div');
   const btn = document.createElement('button');
   
- 
-  element.innerHTML = _.join(['Hello', 'webpack'], ' ');
+   element.innerHTML = _.join(['Hello', 'webpack'], ' ');
   
   btn.innerHTML = 'Click me and check the console!';
   btn.onclick = printMe;
@@ -124,14 +139,31 @@ function component() {
   return element;
 }
 
-document.body.appendChild(component());
+let element = component(); // Store the element to re-render on print.js changes
+ document.body.appendChild(element);
 
 if (module.hot) {
    module.hot.accept('./print.js', function() {
-     console.log('Accepting the updated printMe module!');
-     printMe();
+      console.log('Accepting the updated printMe module!');
+      document.body.removeChild(element);
+      element = component(); // Re-render the "component" to update the click handler
+      document.body.appendChild(element);
    })
  }
+ 
+ 
+   export default function printMe() {
+   console.log('Updating print.js...');
+
+  [HMR] Waiting for update signal from WDS...
+main.js:4395 [WDS] Hot Module Replacement enabled.
+ 2main.js:4395 [WDS] App updated. Recompiling...
+ main.js:4395 [WDS] App hot update...
+ main.js:4330 [HMR] Checking for updates on the server...
+ main.js:10024 Accepting the updated printMe module!
+ 0.4b8ee77….hot-update.js:10 Updating print.js...
+ main.js:4330 [HMR] Updated modules:
+ main.js:4330 [HMR]  - 20
 
 
 // No warning
@@ -192,7 +224,7 @@ $
 .hello {
   color: blue;
   font-family: 'MyFont';
-  background: url('./icon.png');
+  background: url.(.png
  }
 
 
