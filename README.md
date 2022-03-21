@@ -82,17 +82,17 @@ Autumn,Lindsey,Letter,I miss you
 module.exports = {
  mode: 'development',
  entry: {
-  './src/index.js',
-  print: './src/print.js',
+   app: './src/index.js',
+ 
 },
 devtool: 'inline-source-map',
 devServer: {
     static: './dist',
+    hot:true,
   },
  plugins: [
   new HtmlWebpackPlugin({
-       
-       title: 'Development',
+    title: 'Hot Module Replacement',
      }),
    ],
    output: {
@@ -109,7 +109,6 @@ devServer: {
  import _ from 'lodash';
  import printMe from './print.js';
 
- 
 function component() {
   const element = document.createElement('div');
   const btn = document.createElement('button');
@@ -126,6 +125,14 @@ function component() {
 }
 
 document.body.appendChild(component());
+
+if (module.hot) {
+   module.hot.accept('./print.js', function() {
+     console.log('Accepting the updated printMe module!');
+     printMe();
+   })
+ }
+
 
 // No warning
 import data from './data.json';
