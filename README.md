@@ -1,6 +1,7 @@
 # Restaurant-page-
 $ mkdir demo-app 
 $ cd demo-app/
+$ npm run build 
 [~/demp-app]$ npm install lodash 
 lodash@2.4.1 node_modules/lodash
 [~/demo-app]$ ls
@@ -206,7 +207,6 @@ Likes tater tots and beer.',
  
 
 
-$ npm run build
 
 
 
@@ -220,15 +220,15 @@ $ npm run build
 }
 
 
-$
-.hello {
+
+$.hello {
   color: blue;
   font-family: 'MyFont';
-  background: url.(.png
+ background: url('./icon.png');
  }
 
 
-$ npm run build
+
 
 
 
@@ -264,11 +264,9 @@ alt:"">
 
 }
 <div class="">
- import
-
- npm install gitignore
  
- var gi = require(`gitignore`);
+
+
  
  <h1>Welcome back to... THE ICE AGE!</h1>
  <p>Travel back to prehistoric times with us with our lovable friends from the adorable and hilarious fanatic film series: The Ice Age!</p>
@@ -322,6 +320,26 @@ alt:"">
  <h4>Eddie@iceage.com</h4>
 
 
+
+
+...
+[webpack-cli] Compilation finished
+assets by status 9.88 KiB [cached] 1 asset
+asset bundle.js 73.4 KiB [emitted] [minimized] (name: main) 1 related asset
+runtime modules 1.82 KiB 6 modules
+orphan modules 326 bytes [orphan] 1 module
+cacheable modules 540 KiB (javascript) 9.88 KiB (asset)
+  modules by path ./node_modules/ 539 KiB
+    modules by path ./node_modules/css-loader/dist/runtime/*.js 2.38 KiB
+      ./node_modules/css-loader/dist/runtime/api.js 1.57 KiB [built] [code generated]
+      ./node_modules/css-loader/dist/runtime/getUrl.js 830 bytes [built] [code generated]
+    ./node_modules/lodash/lodash.js 530 KiB [built] [code generated]
+    ./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js 6.67 KiB [built] [code generated]
+  modules by path ./src/ 1.45 KiB (javascript) 9.88 KiB (asset)
+    ./src/index.js + 1 modules 794 bytes [built] [code generated]
+    ./src/icon.png 42 bytes (javascript) 9.88 KiB (asset) [built] [code generated]
+    ./node_modules/css-loader/dist/cjs.js!./src/style.css 648 bytes [built] [code generated]
+webpack 5.4.0 compiled successfully in 1972 ms
 
 {
    "name": "webpack-demo",
