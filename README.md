@@ -13,8 +13,8 @@ npm install --save-dev html-webpack-plugin
 npm install toml yamljs json5 --save-dev
  npm uninstall css-loader csv-loader json5 style-loader toml xml-loader yamljs
 npm install --save-dev express webpack-dev-middleware
-npx webpack --watch
 npm install --save-dev style-loader css-loader
+npx webpack --watch
 
 
 
@@ -348,20 +348,3 @@ alt:"">
  }
      
 
-Example app listening on port 3000!
-...
-<i> [webpack-dev-middleware] asset index.bundle.js 1.38 MiB [emitted] (name: index)
-<i> asset print.bundle.js 6.25 KiB [emitted] (name: print)
-<i> asset index.html 274 bytes [emitted]
-<i> runtime modules 1.9 KiB 9 modules
-<i> cacheable modules 530 KiB
-<i>   ./src/index.js 406 bytes [built] [code generated]
-<i>   ./src/print.js 83 bytes [built] [code generated]
-<i>   ./node_modules/lodash/lodash.js 530 KiB [built] [code generated]
-<i> webpack 5.4.0 compiled successfully in 709 ms
-<i> [webpack-dev-middleware] Compiled successfully.
-<i> [webpack-dev-middleware] Compiling...
-<i> [webpack-dev-middleware] assets by status 1.38 MiB [cached] 2 assets
-<i> cached modules 530 KiB (javascript) 1.9 KiB (runtime) [cached] 12 modules
-<i> webpack 5.4.0 compiled successfully in 19 ms
-<i> [webpack-dev-middleware] Compiled successfully.
